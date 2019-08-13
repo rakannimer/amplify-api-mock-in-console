@@ -10,7 +10,7 @@ frontend:
 
     build:
       commands:
-        - NODE_DEBUG=dynamodb-emulator node src/index.js
+        - NODE_DEBUG=dynamodb-emulator node index.js
 
   artifacts:
     baseDirectory: build
