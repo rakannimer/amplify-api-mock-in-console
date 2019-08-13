@@ -1,0 +1,13 @@
+{
+  "name": "amplify-api-mock-in-console",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "amplify-dynamodb-simulator": "^0.2.0"
+  }
+}

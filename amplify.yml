@@ -1,0 +1,21 @@
+version: 0.1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - yum -y install java-1.8.0-openjdk
+        - yum -y install java-1.8.0-openjdk-devel
+        - java -version
+        - yarn install
+
+    build:
+      commands:
+        - NODE_DEBUG=dynamodb-emulator node src/index.js
+
+  artifacts:
+    baseDirectory: build
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - node_modules/**/*
